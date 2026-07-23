@@ -11,4 +11,4 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: ./.github/actions/actions1.yml
+    uses: ./.github/actions/actions1.yaml
