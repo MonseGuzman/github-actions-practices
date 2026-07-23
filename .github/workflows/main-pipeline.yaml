@@ -1,0 +1,14 @@
+name: Main Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - feature/*
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  call-reusable-workflow:
+    uses: ./.github/actions/actions1.yml
