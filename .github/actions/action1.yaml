@@ -4,6 +4,9 @@ description: 'Runs steps from a custom folder'
 runs:
   using: 'composite'
   steps:
+    - name: Check out code
+      uses: actions/checkout@v6
+
     - name: Run script
       shell: bash
       run: echo "Hello from another folder!"
