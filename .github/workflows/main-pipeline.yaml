@@ -11,7 +11,7 @@ on:
 
 jobs:
   call-workflow:
-    uses: MonseGuzman/github-actions-practices/.github/workflows/workflow-A.yml@v1
+    uses: ./.github/workflows/action1.yml
 
   # call-workflow-passing-data:
   #   permissions:
