@@ -11,4 +11,8 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: ./.github/actions/actions1.yaml
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Local Action Call
+        uses: ./.github/actions/action1.yaml

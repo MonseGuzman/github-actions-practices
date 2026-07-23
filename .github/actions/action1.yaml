@@ -1,13 +1,9 @@
 name: 'My Custom Action'
 description: 'Runs steps from a custom folder'
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Run script
-        shell: bash
-        run: echo "Hello from another folder!"
+runs:
+  using: 'composite'
+  steps:
+    - name: Run script
+      shell: bash
+      run: echo "Hello from another folder!"
